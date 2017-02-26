@@ -1,0 +1,77 @@
+// colors
+$title: #E75651;
+$coverUp: #F49659;
+$confuzzled: #B2CF41;
+/////////
+
+body {
+  background-color: lightgrey;
+  font-size: 16px;
+}
+
+.RecepieList {
+  .container {
+    max-width: 800px;
+    .list-group {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 20px;
+    }
+  
+    .appTitle {
+      text-align: center;
+      font-family: Impact, Charcoal, sans-serif;
+      color: $title;
+      margin-top: 50px;
+      font-size: 250%;
+    }
+
+    .addRecepieButtonWrapper {
+      display:flex;
+      justify-content: center;
+      font-size: 120%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.Recepie {
+  .list-group-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .recepieTitle {
+      flex-grow: 1;
+      font-size: 120%;
+      font-weight: bold;
+    }
+  }
+
+  .editButton {
+    padding: 0px 17px 0px 17px;
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    .editIcon {
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+
+  .closeButton {
+    margin-left: 10px;
+  }
+
+  .modalTitle {
+    color: $title;
+  }
+
+  .modal-container {
+    position: relative;
+  }
+
+  .modal-container .modal, .modal-container .modal-backdrop {
+    position: absolute;
+  }
+}
+
+
